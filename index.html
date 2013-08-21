@@ -29,7 +29,6 @@
                 
 <!-- Add PhoneGap -->
 <script type="text/javascript" src="phonegap.js"></script>
-<script type="text/javascript" src="childbrowser.js"></script>
 
 </head> 
 
@@ -60,7 +59,7 @@
     		<p><strong>Get Your Own App</strong><br>
    		    Tap the &quot;Get your own app!&quot; button and enter the email address of the person interested in getting more information about apps from App-Platform.net in the &quot;Email&quot; field. Once you are done tap the &quot;Submit&quot; button and a representative of App-Platform.net will be in touch.</p>
         	<p><strong>Learn more</strong><br>
-            Go to <a target="_blank" onClick="window.plugins.childBrowser.openExternal('http://app-platform.net');">App-Platform.net</a> to learn more about this app and others.</p>
+            Go to <a target="_blank" onClick="window.open('http://app-platform.net', '_system', 'location=yes');">App-Platform.net</a> to learn more about this app and others.></p>
         </div>
         
         <div data-role="footer" class="center">
@@ -121,14 +120,14 @@
     	<p><strong>Contact</strong></p>
         <a href="tel:6512101038" data-role="button" data-icon="phone">(651) 210-1038</a>
         <a href="mailto:joeytorkildson@edinarealty.com" target="_blank" data-icon="email" data-role="button">joeytorkildson@edinarealty.com</a>
-        <a data-role="button" data-icon="info" target="_blank" onClick="window.plugins.childBrowser.openExternal('http://www.joeytork.com');">www.joeytork.com</a>
-        <a data-role="button" data-icon="info" target="_blank" onClick="window.plugins.childBrowser.openExternal('http://www.stpaulhousesearch.com');">www.stpaulhousesearch.com</a>
+        <a data-role="button" data-icon="info" target="_blank" onClick="window.open('http://www.joeytork.com', '_system', 'location=yes');">www.joeytork.com</a>
+        <a data-role="button" data-icon="info" target="_blank" onClick="window.open('http://www.stpaulhousesearch.com', '_system', 'location=yes');">www.stpaulhousesearch.com</a>
         <br />
         
         <p><strong>Location:</strong><br />
         500 Village Center Drive<br />
        	North Oaks, MN 55112</p>
-        <a data-role="button" data-icon="home" target="_blank" onClick="window.plugins.childBrowser.openExternal('http://maps.google.com/maps?hl=en&safe=off&ix=seb&ion=1&bav=on.2,or.r_gc.r_pw.r_cp.r_qf.,cf.osb&biw=1130&bih=891&q=500+Village+Center+Drive+North+Oaks,+MN+55112&um=1&ie=UTF-8&hq=&hnear=0x52b328269ef21e11:0xce7fbd080608a979,500+Village+Center+Dr,+North+Oaks,+MN+55127&gl=us&ei=M1JvT4y0K8bOgAfT1dlq&sa=X&oi=geocode_result&ct=title&resnum=1&ved=0CB8Q8gEwAA');">Map</a>
+        <a data-role="button" data-icon="home" target="_blank" onClick="window.open('http://maps.google.com/maps?hl=en&safe=off&ix=seb&ion=1&bav=on.2,or.r_gc.r_pw.r_cp.r_qf.,cf.osb&biw=1130&bih=891&q=500+Village+Center+Drive+North+Oaks,+MN+55112&um=1&ie=UTF-8&hq=&hnear=0x52b328269ef21e11:0xce7fbd080608a979,500+Village+Center+Dr,+North+Oaks,+MN+55127&gl=us&ei=M1JvT4y0K8bOgAfT1dlq&sa=X&oi=geocode_result&ct=title&resnum=1&ved=0CB8Q8gEwAA', '_system', 'location=yes');">Map</a>
         <p><strong>Current Listings</strong></p>
         <div id="gallery_1"></div>
 	</div><!-- /block b -->       
@@ -171,8 +170,6 @@ $(".grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid
 	var settings = {
 	  username: 'tork30',
 	  maxresults: 50,
-	  mode: 'album',
-	  album: 'App',
 	  thumbCrop: 1,
 	  showAlbumDescription: false,
 	};
